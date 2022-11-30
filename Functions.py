@@ -1,4 +1,4 @@
-FilePath = r"C:\Users\pc\Desktop\Python_Basics\Web_app1\Todos.txt"
+FilePath = "Todos.txt"
 def get_todos():
     """Reads a text fileand returns list of todo items"""
     with open(FilePath, 'r') as file_local:
