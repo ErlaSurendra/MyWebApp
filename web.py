@@ -12,7 +12,7 @@ st.write("This improves your produtivity")
 
 todos=Functions.get_todos()
 for index,todo in enumerate(todos):
-    checkbox = st.checkbox(todo,key=todo)
+    checkbox = st.checkbox(todo,key = todo)
     if checkbox:
         todos.pop(index)
         Functions.write_todos(todos)
