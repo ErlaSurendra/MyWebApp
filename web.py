@@ -12,7 +12,7 @@ st.subheader("This is my todo app.")
 st.write("This improves your <b>produtivity</b>", unsafe_allow_html= True)
 st.text_input(label="",placeholder="Add a new todo...",on_change=add_todo,key="new_todo")
 
-todos=Functions.get_todos
+todos = Functions.get_todos
 for index,todo in enumerate(todos):
     checkbox = st.checkbox(todo,key = todo)
     if checkbox:
